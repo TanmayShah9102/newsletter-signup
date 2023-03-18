@@ -20,7 +20,7 @@ app.use(express.urlencoded({
 app.use(express.static("public"));
 
 app.get('/', function(req, res) {
-    res.sendFile('D:/Learning/Web Dev Course/Newsletter-Signup/signup.html');
+    res.sendFile(__dirname + '/signup.html');
 })
 
 app.post('/', function(req, res) {
