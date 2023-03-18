@@ -1,12 +1,10 @@
 //jshint esversion: 6
 
 const express = require('express');
-// const axios = require('axios');
-const https = require('https');
 const client = require("@mailchimp/mailchimp_marketing");
 
 client.setConfig({
-  apiKey: "b48548d5bf71e4304057bc3daa943649-us13",
+  apiKey: "03637bc92e2fdc6f3edb5e32ae7c7d9c-us13",
   server: "us13",
 });
 
@@ -70,9 +68,3 @@ const port = 3300;
 app.listen(port, function() {
     console.log("Server listening at port " + port);
 });
-
-// API key
-// b48548d5bf71e4304057bc3daa943649-us13
-
-// List id
-// 7a7a09469f
