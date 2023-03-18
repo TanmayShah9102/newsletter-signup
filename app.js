@@ -66,7 +66,7 @@ app.get("/failure", function(req, res) {
     res.redirect("/");
 });
 
-const port = 3300;
+const port = process.env.PORT || 3300;
 app.listen(port, function() {
     console.log("Server listening at port " + port);
 });
