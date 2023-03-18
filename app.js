@@ -2,9 +2,11 @@
 
 const express = require('express');
 const client = require("@mailchimp/mailchimp_marketing");
+require('dotenv').config();
+const api_key = process.env.MAILCHIMP_API_KEY;
 
 client.setConfig({
-  apiKey: "03637bc92e2fdc6f3edb5e32ae7c7d9c-us13",
+  apiKey: api_key,
   server: "us13",
 });
 
